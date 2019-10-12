@@ -1,4 +1,4 @@
-@page
+@page "{id:int?}"
 @model RazorPagesMovie.Pages.Movies.DetailsModel
 
 @{
@@ -28,6 +28,18 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Movie.Genre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie.Director)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Director)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie.Rating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Rating)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Movie.Price)
